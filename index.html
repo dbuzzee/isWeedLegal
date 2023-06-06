@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Is Weed Legal Here?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #result {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Is Weed Legal Here?</h1>
+        <input id="state" type="text" placeholder="Enter state name...">
+        <button onclick="checkLegality()">Check</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+   
+    let legalStates = ["colorado", "washington", "alaska", "oregon", "washington, d.c.", "california", "maine", "massachusetts",  "nevada", "michigan", "vermont", "guam", "illinois", "arizona", "montana", "new jersey", "new york", "virginia", "new mexico", "connecticut", "rhode island", "maryland", "missouri", "delaware", "minnesota"];
+
+    function checkLegality() {
+        let stateInput = document.getElementById('state').value.toLowerCase();
+        let resultElement = document.getElementById('result');
+
+        if (legalStates.includes(stateInput)) {
+            resultElement.textContent = "Yes, weed is legal in " + stateInput + ".";
+            resultElement.style.color = "green";
+        } else {
+            resultElement.textContent = "No, weed is not legal in " + stateInput + ".";
+            resultElement.style.color = "red";
+        }
+    }
+</script>
+
+</body>
+</html>
