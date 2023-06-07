@@ -17,8 +17,6 @@ html, body {
     background: #1b3601;
     box-sizing: border-box;
     font-size: 16px;
-    -webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
-    box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
 }
 
 *, *:before, *:after {
