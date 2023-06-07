@@ -51,7 +51,7 @@ body {
     background-repeat: no-repeat;
     border-radius: 28px;
     height: 320px;
-    width: 320px;
+    width: 370px;
     display: grid;
     place-items: center;
     /* background: #2f5701; */
@@ -68,7 +68,7 @@ box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;;
     padding: 20px;
     color: #181A18; /* Dark text for contrast */
     text-align: center;
-    height: 260px;
+    height: 320px;
     width: 260px;
     background: rgba( 34, 59, 9, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
