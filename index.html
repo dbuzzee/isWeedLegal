@@ -9,27 +9,48 @@
     <div class="content">
         <h1>Is Weed Legal Here?</h1>
             <input id="state" type="text" placeholder="Enter state name...">
-            <button onclick="checkLegality()">Check</button>
+            <button id="checkButton" onclick="checkLegality()">Check</button>
+
         <p id="result"></p>
     </div>
 </div>
 
     <script>
    
-    let legalStates = ["colorado", "washington", "alaska", "oregon", "washington, d.c.", "california", "maine", "massachusetts",  "nevada", "michigan", "vermont", "guam", "illinois", "arizona", "montana", "new jersey", "new york", "virginia", "new mexico", "connecticut", "rhode island", "maryland", "missouri", "delaware", "minnesota"];
-
-    function checkLegality() {
-        let stateInput = document.getElementById('state').value.toLowerCase();
-        let resultElement = document.getElementById('result');
-
-        if (legalStates.includes(stateInput)) {
-            resultElement.textContent = "Yes, weed is legal in " + stateInput + ".";
-            resultElement.style.color = "bisque";
-        } else {
-            resultElement.textContent = "No, weed is not legal in " + stateInput + ".";
-            resultElement.style.color = "bisque";
-        }
+   document.getElementById('state').addEventListener('keyup', function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.key === 'Enter') {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById('checkButton').click();
     }
+});
+
+let legalStates = ["colorado", "washington", "alaska", "oregon", "washington, d.c.", "california", "maine", "massachusetts",  "nevada", "michigan", "vermont", "guam", "illinois", "arizona", "montana", "new jersey", "new york", "virginia", "new mexico", "connecticut", "rhode island", "maryland", "missouri", "delaware", "minnesota"];
+
+function checkLegality() {
+    let stateInput = document.getElementById('state').value.toLowerCase();
+    let resultElement = document.getElementById('result');
+
+    // Check if input field is empty
+    if (!stateInput) {
+        resultElement.textContent = "Please enter a state.";
+        resultElement.style.color = "bisque";
+        return; // Exit the function
+    }
+
+    if (legalStates.includes(stateInput)) {
+        resultElement.textContent = "Yes, weed is legal in " + stateInput + ".";
+        resultElement.style.color = "bisque";
+    } else {
+        resultElement.textContent = "No, weed is not legal in " + stateInput + ".";
+        resultElement.style.color = "bisque";
+    }
+}
+
+
+
 </script>
 
 </body>
