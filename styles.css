@@ -37,6 +37,10 @@ box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
 body {
     margin: 0;
     padding: 0;
+    height:100vh;
+    display: felx;
+    justify-content: center;
+    aling-items:center;
 
 }
 
