@@ -11,13 +11,13 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
-    height: 100vh;
+/*     height: 100vh; */
     font-size: 16px; /* Ensure readability across devices */
     /* Darker background for contrast */
 
-    display: flex;
+/*     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-family: Arial, sans-serif; /* Simple, clean font */
     border-radius: 38px;
     -webkit-border-radius: 38px;
