@@ -6,42 +6,19 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-html {
-    line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    box-sizing: border-box;
-/*     height: 100vh; */
-    font-size: 16px; /* Ensure readability across devices */
-    /* Darker background for contrast */
-
-/*     display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-family: Arial, sans-serif; /* Simple, clean font */
-    border-radius: 38px;
-    -webkit-border-radius: 38px;
-border-radius: 38px;
--webkit-border-radius: 38px;
-border-radius: 38px;
-background: #223b09;
--webkit-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
-background: #1b3601;
--webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
-    }
-
-
-
-body {
+html, body {
     margin: 0;
     padding: 0;
     height:100vh;
-    display: felx;
+    display: flex;
     justify-content: center;
-    aling-items:center;
-
+    align-items:center;
+    font-family: Arial, sans-serif;
+    background: #1b3601;
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
+    box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
 }
 
 *, *:before, *:after {
