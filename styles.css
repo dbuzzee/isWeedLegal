@@ -113,6 +113,8 @@ button {
         height: 100vh;
         padding: 5vw; /* This will add padding around the body equal to 5% of viewport width */
         box-sizing: border-box; /* This will make sure padding is included in the body's total width and height */
+            display: grid;  
+    grid-template-columns: 5% 1fr 5%;  
     }
 
     .img {
