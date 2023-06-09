@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="main-container">
-    <div class="content">
+    <div class="main-content">
+    <div class="glass">
         <h1>Is Weed Legal Here?</h1>
             <input id="state" type="text" placeholder="Enter state name...">
             <button id="checkButton" onclick="checkLegality()">Check</button>
@@ -15,7 +15,8 @@
     </div>
 </div>
 
-    <script>
+
+<script>
    
    document.getElementById('state').addEventListener('keyup', function(event) {
     // Number 13 is the "Enter" key on the keyboard
@@ -25,13 +26,13 @@
         // Trigger the button element with a click
         document.getElementById('checkButton').click();
     }
-});
+    });
 
-let legalStates = ["colorado", "washington", "alaska", "oregon", "washington, d.c.", "california", "maine", "massachusetts",  "nevada", "michigan", "vermont", "guam", "illinois", "arizona", "montana", "new jersey", "new york", "virginia", "new mexico", "connecticut", "rhode island", "maryland", "missouri", "delaware", "minnesota"];
+    let legalStates = ["colorado", "washington", "alaska", "oregon", "washington, d.c.", "california", "maine", "massachusetts",  "nevada", "michigan", "vermont", "guam", "illinois", "arizona", "montana", "new jersey", "new york", "virginia", "new mexico", "connecticut", "rhode island", "maryland", "missouri", "delaware", "minnesota"];
 
-function checkLegality() {
-    let stateInput = document.getElementById('state').value.toLowerCase();
-    let resultElement = document.getElementById('result');
+    function checkLegality() {
+        let stateInput = document.getElementById('state').value.toLowerCase();
+        let resultElement = document.getElementById('result');
 
     // Check if input field is empty
     if (!stateInput) {
@@ -48,9 +49,6 @@ function checkLegality() {
         resultElement.style.color = "bisque";
     }
 }
-
-
-
 </script>
 
 </body>
