@@ -11,44 +11,41 @@ html{
 
 
 body {
-
-    box-sizing: border-box;
     font-size: 16px;
-    
-      margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background: #1b3601;
-  overflow: hidden; /* Prevents scrolling */
-  display: flex;
-  justify-content: center;
+    margin: 0;
+    padding: 0; 
+    height: 100%;  
+    font-family: Arial, sans-serif;
+    background: #1b3601;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+     overflow: hidden; 
 }
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 
 .main-container {
-  width: 90%;
-  max-width: 340px;
-  margin: 5% auto; /* Gives you the 10% space, split between top and bottom */
-  background-image: url(./background-image.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 28px;
-  min-height: 370px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-      -webkit-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
+    width: 90%;
+    max-width: 340px;
+    margin: 0 auto;  /* Set the margin to center it horizontally */
+    min-height: 370px;
+    
+    background-image: url(./background-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     -webkit-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
     box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a
     background: #1b3601;
--webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;;
+    -webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
+    box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;;
 }
+
 /* .img{
     background-image: url(./background-image.jpeg);
     background-position: center;
@@ -135,21 +132,23 @@ button {
 /* Mobile view styles */
 @media (max-width: 768px) {
     body {
-          margin: 0;
-          padding: 15% 5%;
-          height:100vh;
-          display: flex;
-          justify-content: center;
-          align-items:flex-start;
+/*           padding: 0; */
+/*           height:100%; */
+/*           align-items:center; */
+/*           margin: 0; */
+/*           padding: 15% 5%;
+          height:100vh; */
+/*           display: flex; */
+/*           justify-content: center;
+          align-items:flex-start; */
     }
 
     .main-container {
-    max-width: none;
-    width: 340px;
-    height: 370px;
-    margin: auto; /* Centers the container vertically and horizontally */
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin: 15px auto;
   }
-    }
 }
 
 
