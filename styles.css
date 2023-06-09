@@ -6,69 +6,52 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-html{
+html {
+   
+    font-size: 16px;
+    font-family: Arial, sans-serif /* Simple, clean font */
+    border-radius: 38px;
+    background: #1b3601;
+    height: 100%;
 }
+
 
 
 body {
-    font-size: 16px;
     margin: 0;
-    padding: 0; 
-    height: 100%;  
-    font-family: Arial, sans-serif;
-    background: #1b3601;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-     overflow: hidden; 
-}
-
-.main-container {
-    width: 90%;
-    max-width: 340px;
-    margin: 0 auto;  /* Set the margin to center it horizontally */
-    min-height: 370px;
-    
-    background-image: url(./background-image.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 28px;
-
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-     -webkit-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
-    box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a
+    height: 100%;
+    -webkit-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
+    box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
     background: #1b3601;
-    -webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
-    box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;;
+    -webkit-box-shadow: inset 7px 7px 11px #193201, inset -7px -7px 11px #1d3a01;
+    box-shadow: inset 7px 7px 11px #193201, inset -7px -7px 11px #1d3a01;
 }
 
-/* .img{
+
+.main-content{
     background-image: url(./background-image.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 28px;
-    min-height: 370px;
-    min-width: 340px;
+    height: 370px;
+    width: 340px;
     display: grid;
     place-items: center;
-    /* background: #2f5701; */
     -webkit-box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a;
     box-shadow: 18px 18px 28px #1e3408, -18px -18px 28px #26420a
-    background: #1b3601;
--webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;;
+    -webkit-box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;
+    box-shadow: 7px 7px 11px #193201, -7px -7px 11px #1d3a01;;
 
-} */
+}
 
-.content {
+.glass {
     width: 80%;
-    padding: 20px;
-    color: #181A18; /* Dark text for contrast */
+    padding: 5%;
     text-align: center;
     text-align: center;
     min-height: 280px;
@@ -128,28 +111,18 @@ button {
                 inset 1px 1px 2px rgba(0, 0, 0, .15);
   }
 
-/* Mobile view styles */
-/* Mobile view styles */
-@media (max-width: 768px) {
-    body {
-/*           padding: 0; */
-/*           height:100%; */
-/*           align-items:center; */
-/*           margin: 0; */
-/*           padding: 15% 5%;
-          height:100vh; */
-/*           display: flex; */
-/*           justify-content: center;
-          align-items:flex-start; */
-    }
 
-    .main-container {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        margin: 15px auto;
-  }
+  @media (max-width: 768px) {
+    body {
+          padding-top:20%;
+          align-items:flex-start; 
+    }
 }
 
-
-
+@media (max-width: 768px) {
+    body {
+          padding-top:20%;
+          padding-left: 5%;
+          padding-right: 5%;
+    }
+}
