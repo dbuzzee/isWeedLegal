@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Is Weed Legal Here?</title>
-   <link rel="icon" type="image/x-icon" href="./favicon.png">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="main-content">
@@ -29,7 +29,31 @@
     }
     });
 
-    let legalStates = ["colorado", "washington", "alaska", "oregon", "washington, d.c.", "california", "maine", "massachusetts",  "nevada", "michigan", "vermont", "guam", "illinois", "arizona", "montana", "new jersey", "new york", "virginia", "new mexico", "connecticut", "rhode island", "maryland", "missouri", "delaware", "minnesota"];
+    let legalStates = [    "colorado", "co",
+    "washington", "wa",
+    "alaska", "ak",
+    "oregon", "or",
+    "washington, d.c.", "washington d.c.", "washington dc",  "dc",
+    "california", "ca",
+    "maine", "me",
+    "massachusetts", "ma",
+    "nevada", "nv",
+    "michigan", "mi",
+    "vermont", "vt",
+    "guam", "gu",
+    "illinois", "il",
+    "arizona", "az",
+    "montana", "mt",
+    "new jersey", "nj",
+    "new york", "ny",
+    "virginia", "va",
+    "new mexico", "nm",
+    "connecticut", "ct",
+    "rhode island", "ri",
+    "maryland", "md",
+    "missouri", "mo",
+    "delaware", "de",
+    "minnesota", "mn"];
 
     function checkLegality() {
         let stateInput = document.getElementById('state').value.toLowerCase();
