@@ -70,6 +70,7 @@ body {
 h1 {
     margin-bottom: 20px;
     color: bisque;
+    letter-spacing: 2px;
 }
 
 input, button {
@@ -85,6 +86,7 @@ input{
 
 #result{
     height: 10px;
+    letter-spacing: 1px;
 }
 
 button {
